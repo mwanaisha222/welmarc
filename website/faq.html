@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Welmac Engineering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .faq-item {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #eef4ff;
+        }
+        .faq-question h3 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        .faq-answer.active {
+            padding: 20px;
+            max-height: 1000px;
+        }
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active i {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">WELMAC ENGINEERING & LOGISTICS</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section style="background-color: #0056b3; color: white; padding: 60px 0; text-align: center;">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Get answers about our engineering services and processes</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-content">
+                <p>Find answers to common questions about Welmac Engineering's services, safety standards, and project processes. For additional inquiries, please contact our team directly.</p>
+            </div>
+            
+            <div class="faq-container">
+                <!-- Service Capabilities -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What types of engineering services do you specialize in?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We specialize in structural steel works, oil & gas engineering, plant installation and maintenance, precision fabrication, and industrial construction. Our services range from design and engineering to manufacturing and installation.</p>
+                    </div>
+                </div>
+                
+                <!-- Safety Standards -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What safety standards do you follow?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We adhere to internationally recognized safety practices and comply with all applicable codes and regulations. Our safety pillars include prevention, compliance, communication, and continuous improvement. All projects undergo rigorous safety planning and monitoring.</p>
+                    </div>
+                </div>
+                
+                <!-- Project Scale -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the largest project you can handle?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>With our 2,000-ton monthly production capacity, we can handle large-scale projects. Our largest completed project was a 940-ton cold box structure measuring 60m in length. We've successfully delivered factory complexes over 12,000m² in size.</p>
+                    </div>
+                </div>
+                
+                <!-- Manufacturing Capabilities -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What manufacturing technology do you use?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We utilize state-of-the-art CNC machines fully integrated with Tekla Structures 3D modeling software. Our facility includes modern cutting, welding, and painting equipment, ensuring precision manufacturing and quality control.</p>
+                    </div>
+                </div>
+                
+                <!-- Project Timeline -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your typical project timeline?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on scope and complexity. A standard industrial building project typically takes 3-6 months from design to completion. We provide detailed project schedules during the planning phase and maintain strict adherence to timelines.</p>
+                    </div>
+                </div>
+                
+                <!-- Quality Assurance -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do you ensure quality control?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our quality objectives include: 
+                            <ul>
+                                <li>Performing work correctly the first time</li>
+                                <li>Meeting all contractual and regulatory requirements</li>
+                                <li>Completing projects within budget and schedule</li>
+                                <li>Exceeding client expectations in all aspects</li>
+                            </ul>
+                            We implement rigorous testing and inspection protocols at every stage.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Industrialized Building Systems -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are Industrialized Building Systems (IBS)?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>IBS is our approach to construction where building components are manufactured in a controlled factory environment and assembled on-site. This method improves quality control, reduces construction timelines, minimizes manpower requirements, and enhances safety.</p>
+                    </div>
+                </div>
+                
+                <!-- Getting Started -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I start a project with Welmac Engineering?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Starting a project is simple:
+                            <ol>
+                                <li>Contact us via phone, email, or our website</li>
+                                <li>We'll schedule a consultation to discuss your requirements</li>
+                                <li>Our engineering team will develop a customized proposal</li>
+                                <li>Upon approval, we begin the design and planning phase</li>
+                            </ol>
+                            We guide you through every step of the process.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Contact Section -->
+            <div style="text-align: center; margin-top: 50px; background-color: #eef4ff; padding: 30px; border-radius: 8px;">
+                <h3>Still Have Questions?</h3>
+                <p>Contact our engineering team directly for specific inquiries:</p>
+                <div class="contact-methods">
+                    <p><i class="fas fa-phone"></i> +256 773 571 644</p>
+                    <p><i class="fas fa-envelope"></i> info@welmacengineering.com</p>
+                </div>
+                <a href="contact.html" class="btn" style="margin-top: 20px; background-color: #0056b3; color: white;">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Welmac Engineering & Logistics</h3>
+                    <p>Precision engineering solutions since 2018</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> P.O. BOX 306 Hoima, Uganda</p>
+                    <p><i class="fas fa-phone"></i> +256 773 571 644</p>
+                    <p><i class="fas fa-phone"></i> +256 761 362 608</p>
+                    <p><i class="fas fa-envelope"></i> info@welmacengineering.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Welmac Engineering & Logistics Co. Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ Accordion Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const isActive = answer.classList.contains('active');
+                    
+                    // Close all answers
+                    document.querySelectorAll('.faq-answer').forEach(ans => {
+                        ans.classList.remove('active');
+                    });
+                    document.querySelectorAll('.faq-question').forEach(q => {
+                        q.classList.remove('active');
+                    });
+                    
+                    // Open clicked if not active
+                    if (!isActive) {
+                        answer.classList.add('active');
+                        this.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
