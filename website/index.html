@@ -5,124 +5,651 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welmac Engineering & Logistics Co. Ltd</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="index.html" class="logo">WELMAC ENGINEERING & LOGISTICS</a>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
+   <header>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo-img">
+                    <img src="static/logo.png" alt="Welmac Engineering Logo" width="60" height="60">
                 </div>
-            </nav>
-        </div>
-    </header>
+                <a href="#home" class="logo-text">WELMAC <span>ENGINEERING</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+<section class="hero" id="home">
+    <div class="container">
         <h1>WELMAC ENGINEERING & LOGISTICS CO. LTD</h1>
         <p>Uganda's Leading Structural Steel & Engineering Solutions Provider</p>
-        <a href="about.html" class="btn">Discover Our Expertise</a>
+        <a href="#about" class="btn">Discover Our Expertise</a>
         <p class="tagline">Dream big, we do!</p>
-    </section>
+    </div>
+</section>
 
     <!-- About Section -->
-    <section id="about-preview">
+    <section id="about">
         <div class="container">
-            <h2 class="section-title">Who We Are</h2>
-            <div class="section-content">
-                <p>Established in 2018, Welmac Engineering is Uganda's dominant player in construction and structural steel industry. We leverage state-of-the-art computerized equipment and Tekla 3D software to deliver innovative solutions with internationally recognized safety standards.</p>
-                <p>Our adoption of Industrialized Building Systems (IBS) and precast concrete technology ensures superior quality control, reduced timelines, and minimized manpower dependency.</p>
-                <div class="stats-grid">
-                    <div class="stat">
-                        <h3>2,000+</h3>
-                        <p>Tons Monthly Production</p>
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div>
+                    <h2>Our Story</h2>
+                    <p>Established in 2018, Welmac Engineering is Uganda's dominant player in construction and structural steel industry. We leverage state-of-the-art computerized equipment and Tekla 3D software to deliver innovative solutions with internationally recognized safety standards.</p>
+                    <div class="vision-mission">
+                        <div>
+                            <h3>Our Mission</h3>
+                            <p>To deliver innovative engineering solutions through advanced technology, industrialized building systems, and internationally recognized safety practices.</p>
+                        </div>
+                        <div>
+                            <h3>Our Vision</h3>
+                            <p>To position ourselves as East Africa's leading specialist in mechanical, electrical, and structural engineering solutions.</p>
+                        </div>
+                        <div class="info-box">
+                            <h4><i class="fas fa-map-marker-alt"></i> Strategic Location</h4>
+                            <p>Based in Hoima District, Western Uganda - heart of Uganda's industrial development</p>
+                        </div>
                     </div>
-                    <div class="stat">
-                        <h3>2018</h3>
-                        <p>Year Established</p>
-                    </div>
-                    <div class="stat">
-                        <h3>50+</h3>
-                        <p>Successful Projects</p>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <h3>2,000+</h3>
+                            <p>Tons Monthly Production</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2018</h3>
+                            <p>Year Established</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Successful Projects</p>
+                        </div>
                     </div>
                 </div>
-                <div class="text-center">
-                    <a href="about.html" class="btn">Our Journey</a>
+                <div>
+                    <img src="static/about.png" alt="Welmac Engineering Facility">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Preview -->
-    <section id="services-preview" style="background-color: #f9f9f9;">
+    <!-- Group Companies Section -->
+    <section id="group" style="background-color: #f5f9f5;">
         <div class="container">
-            <h2 class="section-title">Our Core Services</h2>
+            <h2 class="section-title">Welmac Group of Companies</h2>
+            <div class="companies-grid">
+                <div class="company-card">
+                    <i class="fas fa-hard-hat" style="font-size: 2.5rem; color: var(--primary-blue);"></i>
+                    <h3>Welmac Construction</h3>
+                    <p>Specializing in purpose-built factory and warehouse buildings</p>
+                </div>
+                <div class="company-card">
+                    <i class="fas fa-home" style="font-size: 2.5rem; color: var(--primary-blue);"></i>
+                    <h3>Welmac Development</h3>
+                    <p>Revolutionizing real estate with quality-focused development projects</p>
+                </div>
+                <div class="company-card">
+                    <i class="fas fa-industry" style="font-size: 2.5rem; color: var(--primary-blue);"></i>
+                    <h3>Welmac Engineering</h3>
+                    <p>Structural steel specialists since 2008</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+<!-- services -->
+       <section id="services" style="background-color: #f5f9f5;">
+    <div class="container">
+        <h2 class="section-title">Our Core Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-img top-right-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="service-content">
+                    <img src="static/steelworks.png" alt="Structural Steel Works" class="service-image">
+                    <h3>Structural Steel Works</h3>
+                    <p>Design, fabrication, and erection of industrial steel structures using Tekla 3D modeling software.</p>
+                    <ul>
+                        <li>Industrial building frameworks</li>
+                        <li>Warehouse structures</li>
+                        <li>Bridge components</li>
+                        <li>Custom steel fabrication</li>
+                    </ul>
+                    <a href="#contact" class="btn">Request Consultation</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img top-right-icon">
+                    <i class="fas fa-oil-well"></i>
+                </div>
+                <div class="service-content">
+                    <img src="static/oilgas.png" alt="Oil & Gas Engineering" class="service-image">
+                    <h3>Oil & Gas Engineering</h3>
+                    <p>Specialized process equipment and mechanical frame works for energy sector.</p>
+                    <ul>
+                        <li>Process equipment installation</li>
+                        <li>Pipeline support systems</li>
+                        <li>Cold box structural frames</li>
+                        <li>Refinery components</li>
+                    </ul>
+                    <a href="#contact" class="btn">Request Consultation</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img top-right-icon">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <div class="service-content">
+                    <img src="static/installation.png" alt="Plant Installation & Maintenance" class="service-image">
+                    <h3>Plant Installation & Maintenance</h3>
+                    <p>Comprehensive industrial plant services from setup to ongoing maintenance.</p>
+                    <ul>
+                        <li>Factory equipment installation</li>
+                        <li>Plant instrumentation</li>
+                        <li>Preventive maintenance</li>
+                        <li>Equipment repair</li>
+                    </ul>
+                    <a href="#contact" class="btn">Request Consultation</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img top-right-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="service-content">
+                    <img src="static/manufacture.png" alt="Fabrication & Welding" class="service-image">
+                    <h3>Fabrication & Welding</h3>
+                    <p>Precision metal fabrication for structural and piping systems.</p>
+                    <ul>
+                        <li>Structural steel fabrication</li>
+                        <li>Pipe fitting and welding</li>
+                        <li>Custom metal components</li>
+                        <li>Quality weld testing</li>
+                    </ul>
+                    <a href="#contact" class="btn">Request Consultation</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img top-right-icon">
+                    <i class="fas fa-drafting-compass"></i>
+                </div>
+                <div class="service-content">
+                    <img src="static/design.png" alt="Engineering Design" class="service-image">
+                    <h3>Engineering Design</h3>
+                    <p>Advanced 3D modeling and structural engineering solutions.</p>
+                    <ul>
+                        <li>Tekla Structures 3D modeling</li>
+                        <li>AutoCAD/SolidWorks designs</li>
+                        <li>BIM system integration</li>
+                        <li>Structural analysis</li>
+                    </ul>
+                    <a href="#contact" class="btn">Request Consultation</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img top-right-icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+                <div class="service-content">
+                    <img src="static/fabrication.png" alt="Construction Works" class="service-image">
+                    <h3>Construction Works</h3>
+                    <p>Turnkey construction solutions for industrial facilities.</p>
+                    <ul>
+                        <li>Factory construction</li>
+                        <li>Industrial building erection</li>
+                        <li>Precast concrete systems</li>
+                        <li>Civil structures</li>
+                    </ul>
+                    <a href="#contact" class="btn">Request Consultation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+
+    <!-- Engineering Process Section -->
+    <section id="process" style="background-color: #f5f9f5;">
+        <div class="container">
+            <h2 class="section-title">Our Engineering Process</h2>
+            <div class="custom-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-box box-style-1">
+                        <img src="static/logo.png" alt="Step 1 Logo" class="timeline-logo">
+                        <div class="timeline-content">
+                            <h3><span class="step-number">1</span> Consultation & Planning</h3>
+                            <p>We begin with a detailed consultation to understand your project requirements. Our team develops comprehensive plans using Tekla 3D modeling software to visualize the final structure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-box box-style-2">
+                        <img src="static/logo.png" alt="Step 2 Logo" class="timeline-logo">
+                        <div class="timeline-content">
+                            <h3><span class="step-number">2</span> Design & Engineering</h3>
+                            <p>Our engineering team creates precise designs optimized for manufacturing and installation. We focus on 'design for production' principles to ensure cost-effective solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-box box-style-3">
+                        <img src="static/logo.png" alt="Step 3 Logo" class="timeline-logo">
+                        <div class="timeline-content">
+                            <h3><span class="step-number">3</span> Precision Manufacturing</h3>
+                            <p>Using our 2,000-ton/month capacity facilities, we fabricate components with CNC machines integrated with 3D detailing software for millimeter-perfect accuracy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-box box-style-4">
+                        <img src="static/logo.png" alt="Step 4 Logo" class="timeline-logo">
+                        <div class="timeline-content">
+                            <h3><span class="step-number">4</span> Quality Control & Testing</h3>
+                            <p>All components undergo rigorous testing and inspection to meet international standards and client specifications before leaving our facility.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-box box-style-1">
+                        <img src="static/logo.png" alt="Step 5 Logo" class="timeline-logo">
+                        <div class="timeline-content">
+                            <h3><span class="step-number">5</span> Professional Installation</h3>
+                            <p>Our experienced site teams ensure safe and precise installation, adhering to strict safety protocols and project timelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section id="values">
+        <div class="container">
+            <h2 class="section-title">Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-medal"></i></div>
+                    <h3>Quality Excellence</h3>
+                    <p>We exceed client expectations with first-time-right solutions</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Safety First</h3>
+                    <p>Health and safety are at the core of all operations</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Innovation</h3>
+                    <p>Adopting cutting-edge technology like IBS and BIM systems</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Commitment</h3>
+                    <p>Focused on client needs with professional project delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+    <!-- Project Management Section -->
+    <section id="project-management">
+    <div class="container">
+        <h2 class="section-title">Project Management Excellence</h2>
+        <div class="project-content">
+            <div class="section-content">
+                <p>Our dedicated project management teams ensure successful project delivery through:</p>
+                <div class="management-grid">
+                    <div class="management-item">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>On-Time Delivery</h3>
+                        <p>Strict adherence to project timelines</p>
+                    </div>
+                    <div class="management-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Budget Compliance</h3>
+                        <p>Projects delivered within agreed budgets</p>
+                    </div>
+                    <div class="management-item">
+                        <i class="fas fa-medal"></i>
+                        <h3>Quality Assurance</h3>
+                        <p>Stringent quality control processes</p>
+                    </div>
+                    <div class="management-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Team Collaboration</h3>
+                        <p>Integrated teamwork approach</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="static/management.png" alt="Project Management Image">
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Engineering Process Section -->
+    
+
+    <!-- Safety Commitment Section -->
+    <section id="safety">
+    <div class="container">
+        <h2 class="section-title">Safety First Approach</h2>
+        <div class="safety-commitment">
+            <div class="safety-step">
+                <p>At Welmac Engineering, health and safety are at the core of all operations. We implement:</p>
+                <ul>
+                    <li>Compliance with international safety standards</li>
+                    <li>Regular safety audits and improvements</li>
+                    <li>Worker safety training programs</li>
+                    <li>Environmental controls at job sites</li>
+                </ul>
+            </div>
+            <div class="safety-image">
+                <img src="static/safety.png" alt="Safety First">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" style="background-color: #f5f9f5;">
+    <div class="container">
+        <h2 class="section-title">Our Engineering Projects</h2>
+        <div class="section-content">
+            <p>Explore our portfolio of successfully delivered projects featuring precision engineering, innovative structural solutions, and adherence to international safety standards.</p>
+        </div>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <button class="btn" style="margin: 5px;" onclick="filterGallery('all')">All Projects</button>
+            <button class="btn" style="margin: 5px;" onclick="filterGallery('steel')">Steel Structures</button>
+            <button class="btn" style="margin: 5px;" onclick="filterGallery('industrial')">Industrial Facilities</button>
+            <button class="btn" style="margin: 5px;" onclick="filterGallery('fabrication')">Fabrication Yard</button>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-card steel">
+                <div class="gallery-img">
+                    <img src="static/air.png" alt="Air Products Cold Box Structure">
+                </div>
+                <div class="gallery-content">
+                    <h3>Air Products Process Equipment</h3>
+                    <p>Mechanical Equipment Frame Works</p>
+                    <div class="project-specs">
+                        <div class="spec-grid">
+                            <div class="spec-item"><i class="fas fa-weight-hanging"></i> Total Weight: 940 Tons</div>
+                            <div class="spec-item"><i class="fas fa-ruler-combined"></i> Max Length: 60m</div>
+                            <div class="spec-item"><i class="fas fa-arrows-up-to-line"></i> Max Height: 6.5m</div>
+                            <div class="spec-item"><i class="fas fa-expand"></i> Max Width: 6m</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-card steel industrial">
+                <div class="gallery-img">
+                    <img src="static/bwendero1.png" alt="Bwendero Sugar Factory">
+                </div>
+                <div class="gallery-content">
+                    <h3>Bwendero Sugar Factory</h3>
+                    <p>Steel Structural Workshop</p>
+                    <div class="project-specs">
+                        <div class="spec-grid">
+                            <div class="spec-item"><i class="fas fa-weight-hanging"></i> Total Weight: 2,100 Tons</div>
+                            <div class="spec-item"><i class="fas fa-ruler-combined"></i> Area: 135m × 96m</div>
+                            <div class="spec-item"><i class="fas fa-arrows-up-to-line"></i> Max Height: 23m</div>
+                            <div class="spec-item"><i class="fas fa-door-open"></i> 6 Motorized Doors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-card steel industrial">
+                <div class="gallery-img">
+                    <img src="static/kasanda.png" alt="Kasanda Sugar Factory">
+                </div>
+                <div class="gallery-content">
+                    <h3>Kasanda Sugar Factory</h3>
+                    <p>Mechanical Equipment Frame Works</p>
+                    <div class="project-specs">
+                        <div class="spec-grid">
+                            <div class="spec-item"><i class="fas fa-cogs"></i> Mechanical Equipment</div>
+                            <div class="spec-item"><i class="fas fa-toolbox"></i> Miscellaneous Works</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-card fabrication">
+                <div class="gallery-img">
+                    <img src="static/fabyard.png" alt="Fabrication Yard">
+                </div>
+                <div class="gallery-content">
+                    <h3>Fabrication Yard</h3>
+                    <p>State-of-the-art manufacturing facilities</p>
+                    <div class="project-specs">
+                        <div class="spec-grid">
+                            <div class="spec-item"><i class="fas fa-warehouse"></i> Covered Fabrication Area</div>
+                            <div class="spec-item"><i class="fas fa-paint-roller"></i> Painting Chamber</div>
+                            <div class="spec-item"><i class="fas fa-box-open"></i> Open Storage Area</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-card fabrication">
+                <div class="gallery-img">
+                    <img src="static/painting.png" alt="Painting Chamber">
+                </div>
+                <div class="gallery-content">
+                    <h3>Painting Facility</h3>
+                    <p>Specialized surface treatment area</p>
+                </div>
+            </div>
+            <div class="gallery-card steel">
+                <div class="gallery-img">
+                    <img src="static/erection.png" alt="Structural Installation">
+                </div>
+                <div class="gallery-content">
+                    <h3>Structural Installation</h3>
+                    <p>Precision erection of industrial structures</p>
+                </div>
+            </div>
+            <div class="gallery-card industrial">
+                <div class="gallery-img">
+                    <img src="static/customer.png" alt="Plant Maintenance">
+                </div>
+                <div class="gallery-content">
+                    <h3>Plant Maintenance</h3>
+                    <p>Factory equipment servicing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Capabilities Section -->
+    <section id="capabilities">
+        <div class="container">
+            <h2 class="section-title">Our Manufacturing Capabilities</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <i class="fas fa-building" style="font-size: 3rem; color: #0056b3; margin-bottom: 20px;"></i>
-                    <h3>Structural Steel Works</h3>
-                    <p>Precision fabrication and erection of industrial structures using Tekla 3D modeling</p>
+                    <div class="service-img">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>2,000 Tons/Month</h3>
+                        <p>Total production capacity across our facilities</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-oil-well" style="font-size: 3rem; color: #0056b3; margin-bottom: 20px;"></i>
-                    <h3>Oil & Gas Engineering</h3>
-                    <p>Specialized process equipment and mechanical frame works</p>
+                    <div class="service-img">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Precision Fabrication</h3>
+                        <p>Tekla 3D modeling and CNC machinery</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-industry" style="font-size: 3rem; color: #0056b3; margin-bottom: 20px;"></i>
-                    <h3>Plant Installation</h3>
-                    <p>Maintenance, instrumentation, and industrial plant setup</p>
+                    <div class="service-img">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Large-Scale Projects</h3>
+                        <p>Up to 60m long structural components</p>
+                    </div>
                 </div>
-            </div>
-            <div class="text-center" style="margin-top: 30px;">
-                <a href="services.html" class="btn">Explore All Services</a>
             </div>
         </div>
     </section>
 
-    <!-- Projects Preview -->
-    <section id="projects-preview">
+    <!-- Contact Section -->
+    <section id="contact">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Air Products Process Equipment</h3>
-                    <p>940-ton Cold Box Structure</p>
-                    <p>60m Length × 6.5m Height</p>
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> P.O. BOX 306 Hoima, Uganda</p>
+                    <p><i class="fas fa-phone"></i> +256 773 571 644</p>
+                    <p><i class="fas fa-phone"></i> +256 761 362 608</p>
+                    <p><i class="fas fa-phone"></i> +256 703 006 695</p>
+                    <p><i class="fas fa-envelope"></i> info@welmacengineering.com</p>
+                    <p><i class="fas fa-globe"></i> www.welmacengineering.com</p>
+                    <p><i class="fas fa-clock"></i> Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <div class="bank-info" style="margin-top: 30px;">
+                        <h4>Banking Partners</h4>
+                        <p>Centenary Bank • Equity Bank</p>
+                        <p>KCB Bank • Stanbic Bank</p>
+                        <p>Housing Finance Bank</p>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Bwendero Sugar Factory</h3>
-                    <p>2,100-ton Steel Workshop</p>
-                    <p>135m × 96m Manufacturing Area</p>
+                <div class="contact-form">
+                    <h3>Send Us a Project Inquiry</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a Service</option>
+                                <option value="steel">Structural Steel Works</option>
+                                <option value="oil-gas">Oil & Gas Engineering</option>
+                                <option value="plant">Plant Installation</option>
+                                <option value="maintenance">Maintenance Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit Inquiry</button>
+                    </form>
                 </div>
             </div>
-            <div class="text-center" style="margin-top: 30px;">
-                <a href="gallery.html" class="btn">View Project Gallery</a>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.072953286873!2d31.348822!3d1.431056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1770b7a8b0a5e1a1%3A0x4c1d3e6f6a3e3b7d!2sHoima%2C%20Uganda!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section id="cta" style="background-color: #0056b3; color: white; text-align: center; padding: 60px 0;">
-        <div class="container">
-            <h2 style="color: white; margin-bottom: 20px;">Ready to Start Your Project?</h2>
-            <p style="margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Contact us today for precision engineering solutions that meet international standards</p>
-            <a href="contact.html" class="btn" style="background-color: white; color: #0056b3;">Get in Touch</a>
+    <!-- Expert Contact Section -->
+    <section id="expert" style="background-color: #f5f9f5;">
+    <div class="container">
+        <h2 class="section-title">Meet Our Team</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <div>
+                    <img src="static/Joshua.png" alt="Muganyizi Joshua">
+                </div>
+                <div>
+                    <h3>Muganyizi Joshua</h3>
+                    <div class="summary-text">
+                        <p>Certified Mechanical Professional<br><br>Muganyizi Joshua is a highly skilled and certified mechanical professional with a strong background in welding, non-destructive testing (NDT), and robotic arm programming. His expertise encompasses a wide range of welding techniques and NDT methods, coupled with practical experience in quality management and process optimization.<br><br>Joshua's educational foundation includes a background in mechanical engineering from Lanzhou Resources & Environment Vocational-Technical University for Metallurgy. He holds a City and Guilds Level 3 Diploma in Welding and Fabrication, Engineering Principles, and Engineering Health and Safety from the United Kingdom. Furthermore, he possesses specialized certifications in robotic arm programming and welding from Shanghai Steps Robotics and a 3G and 6G coded welding certificate from Sunmaker Oil and Gas Institute. He is also certified in various NDT techniques, including UT, RT, MT, and PT.<br><br>Joshua's skill set is comprehensive, covering various aspects of welding and NDT. He is proficient in robotic arm programming and welding, demonstrating competence in automated welding processes. He has experience in developing and implementing Welding and NDT Qualification Management Systems (WQMS), ensuring alignment with project-specific welding strategies. His experience also includes participation in welding and NDT process initiatives, with a focus on enhancing weld quality and optimizing production throughput.</p>
+                    </div>
+                    <div class="expert-contact">
+                        <p><i class="fas fa-phone"></i> +256 703 006 695</p>
+                        <p><i class="fas fa-envelope"></i> joshua@welmacengineering.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div>
+                    <img src="images/aron.jpg" alt="Ongodia Aron">
+                </div>
+                <div>
+                    <h3>Ongodia Aron</h3>
+                    <div class="summary-text">
+                        <p>Mechanical Technician | Industrial Maintenance & Production Operations<br><br>🔧 I am a highly skilled Mechanical Technician with over 5 years of hands-on experience in mechanical maintenance, repair, and machine operation across the sugar, distillery, and beverage sectors. I hold a Level 3 Mechanical Manufacturing and Maintenance qualification from City & Guilds Institute of London (2016-2019), attained through rigorous apprenticeship training.<br><br>My technical background includes expertise in the maintenance and operation of both rotating and static mechanical equipment, such as pumps, gearboxes, decanters, generators, compressors, boilers, heaters, and pressure vessels. I also have hands-on experience with automated systems and production machines such as boilers, Blowmax, soda filler machine, and Auto Pack robots.<br><br>Throughout my career, I’ve held key roles at: Kinyara Sugar Factory (2019–2021): mechanical fitter – Process House; Bwendero Dairy Farm Ltd (2021–2023): Mechanical Maintenance & Manufacturing Technician – Machine Shop; Kakira Sugar Ltd (2023–2024): Mechanical Technician – Sugar Irrigation Project; Coca Cola Beverages Ltd: Process Operator - Manufacturing.<br><br>My strengths lie in preventive and corrective maintenance, equipment troubleshooting, and plant operations. I’m also well-versed in Health & Safety standards and trained in firefighting protocols, making me a reliable team member in critical operations. I am fluent in English and pride myself on excellent communication skills, strong teamwork, and a dedicated work ethic.</p>
+                    </div>
+                    <div class="expert-contact">
+                        <p><i class="fas fa-phone"></i> +256 [Contact Number]</p>
+                        <p><i class="fas fa-envelope"></i> aron@welmacengineering.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div>
+                    <img src="images/charles.jpg" alt="Wabyoona Charles">
+                </div>
+                <div>
+                    <h3>Wabyoona Charles</h3>
+                    <div class="summary-text">
+                        <p>Certified Auto Electrician/Auto Mechanic<br><br>Wabyoona Charles is a highly qualified professional with an international City and Guilds Level 2 IVQ Diploma in Motor Vehicle Systems. I hold the diploma with diverse skills and technical know-how in motor vehicle systems (electrical) with seven (7) years of hands-on experience in SUVs, trailer trucks, and heavy machinery from across the globe (e.g., Scania, Benz, Faw, Beiben, Actros, Komatsu, Changlin, Mahindra, Sinotrucks, Isuzu, Renault trucks, etc.).<br><br>I have worked in major companies both local and international, starting at Kinyara Sugar Works Ltd, Hoima Sugar Ltd, Oil Palm Uganda Ltd (Bidico), and currently working as Chief Auto Electrician at Huaye International and Logistics Company Ltd. Ready to learn and explore more advanced electrical motor vehicle systems.</p>
+                    </div>
+                    <div class="expert-contact">
+                        <p><i class="fas fa-phone"></i> +256 [Contact Number]</p>
+                        <p><i class="fas fa-envelope"></i> charles@welmacengineering.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div>
+                    <img src="images/emmanuel.jpg" alt="Bbosa Emmanuel">
+                </div>
+                <div>
+                    <h3>Bbosa Emmanuel</h3>
+                    <div class="summary-text">
+                        <p>Certified Mechanical Technician<br><br>Bbosa Emmanuel is highly skilled and certified in Mechanical Technician with a strong background in welding & fabrication, mechanical fitting & pipe fitting, and non-destructive testing (NDT) with over 3 years of experience in the oil and gas sector and 4 years across the sugar factories, distillery, and beverage sectors.<br><br>Bbosa's education foundation includes a City & Guilds Level 2 Diploma in Engineering Fabrication & Welding Technology and Engineering Health and Safety at Uganda Petroleum Institute Kigumba (UPIK), a National Certificate in Welding & Fabrication at St. Simon Peter's VTC Hoima, Coded Welding 3G-6G (AWS), and Mechanical Fitting & Pipe Fitting at UPIK.<br><br>I have worked in different companies both local and international, starting at Hoima Sugar Factory Ltd, David Engineering Ltd, and ZPEB-Uganda Total Energies E&P Uganda project, where I currently work as a Welding Workshop Supervisor.</p>
+                    </div>
+                    <div class="expert-contact">
+                        <p><i class="fas fa-phone"></i> +256 [Contact Number]</p>
+                        <p><i class="fas fa-envelope"></i> emmanuel@welmacengineering.com</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
@@ -130,7 +657,7 @@
             <div class="footer-container">
                 <div class="footer-section">
                     <h3>Welmac Engineering & Logistics</h3>
-                    <p>Your partner for innovative engineering solutions</p>
+                    <p>Precision engineering solutions since 2018</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -140,10 +667,11 @@
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -160,6 +688,68 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        // Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            if (navMenu.classList.contains('active')) {
+                hamburger.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will contact you soon.');
+            contactForm.reset();
+        });
+
+        // Gallery Filter Function
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            filterGallery('all');
+        });
+    </script>
 </body>
 </html>
